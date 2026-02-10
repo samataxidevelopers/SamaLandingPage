@@ -1,0 +1,7 @@
+{
+  "name": "Sama Taxi Landing Page",
+  "description": "A premium, high-contrast landing page for Sama Taxi, featuring a journey timeline, specialized ride services, and an AI-powered support terminal.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
