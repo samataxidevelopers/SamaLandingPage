@@ -14,7 +14,8 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, setActiveTab, lang, 
   const t = translations[lang].nav;
   const tabs = [
     { type: TabType.MAIN, label: t.main },
-    { type: TabType.PRIVACY, label: t.privacy }
+    { type: TabType.PRIVACY, label: t.privacy },
+    { type: TabType.TERMS, label: t.terms }
   ];
 
   return (

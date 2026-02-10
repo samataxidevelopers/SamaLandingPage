@@ -1,7 +1,8 @@
 
 export enum TabType {
   MAIN = 'MAIN',
-  PRIVACY = 'PRIVACY'
+  PRIVACY = 'PRIVACY',
+  TERMS = 'TERMS'
 }
 
 export type Language = 'en' | 'ar';

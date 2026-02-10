@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { TabType, Language } from './types';
 import MainContent from './components/MainContent';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsConditions from './components/TermsConditions';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
@@ -21,6 +22,8 @@ const App: React.FC = () => {
         return <MainContent lang={lang} />;
       case TabType.PRIVACY:
         return <PrivacyPolicy lang={lang} />;
+      case TabType.TERMS:
+        return <TermsConditions lang={lang} />;
       default:
         return <MainContent lang={lang} />;
     }

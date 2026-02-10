@@ -40,6 +40,16 @@ const Footer: React.FC<FooterProps> = ({ lang, setActiveTab }) => {
                 >
                   {navT.privacy}
                 </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveTab(TabType.TERMS);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  className="text-left rtl:text-right hover:text-sama-yellow transition cursor-pointer"
+                >
+                  {lang === 'ar' ? 'الشروط والأحكام' : 'Terms & Conditions'}
+                </button>
               </nav>
             </div>
           </div>

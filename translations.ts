@@ -3,8 +3,8 @@ export const translations = {
   en: {
     nav: {
       main: 'Main',
-      about: 'About',
       privacy: 'Privacy Policy',
+      terms: 'Terms & Conditions',
       download: 'Download App',
       slogan: 'Your journey, our priority'
     },
@@ -49,6 +49,16 @@ export const translations = {
       sec3Title: '3. Contact Dispatch',
       sec3Content: 'For any privacy concerns or data deletion requests, please contact our legal team at:'
     },
+    terms: {
+      title: 'Terms & Conditions',
+      intro: 'Please read these terms and conditions carefully before using the Sama Taxi application and services.',
+      sec1Title: '1. Acceptance of Terms',
+      sec1Content: 'By creating an account or booking a ride, you agree to be bound by these Terms & Conditions and all applicable local regulations in the Kingdom of Saudi Arabia.',
+      sec2Title: '2. Use of the Service',
+      sec2Content: 'You agree to use Sama Taxi only for lawful purposes, to provide accurate trip and contact information, and to respect our drivers, vehicles, and other road users at all times.',
+      sec3Title: '3. Limitation of Liability',
+      sec3Content: 'While we strive to provide a safe and reliable service, Sama Taxi is not liable for indirect, incidental, or consequential damages arising from the use of the service, to the maximum extent permitted by law.'
+    },
     footer: {
       desc: 'Leading the way in digital transportation solutions across Saudi Arabia. Connects you and guides you.',
       copy: 'All rights reserved.'
@@ -57,8 +67,8 @@ export const translations = {
   ar: {
     nav: {
       main: 'الرئيسية',
-      about: 'من نحن',
       privacy: 'سياسة الخصوصية',
+      terms: 'الشروط والأحكام',
       download: 'تحميل التطبيق',
       slogan: 'يوصلك و يهديك'
     },
@@ -102,6 +112,16 @@ export const translations = {
       sec2Content: 'نشارك اسمك الأول وموقعك مع السائق المعين. نحن لا نبيع بياناتك السلوكية الشخصية لشركات إعلان طرف ثالث.',
       sec3Title: '3. اتصل بمركز الإرسال',
       sec3Content: 'لأي مخاوف تتعلق بالخصوصية أو طلبات حذف البيانات، يرجى الاتصال بفريقنا القانوني على:'
+    },
+    terms: {
+      title: 'الشروط والأحكام',
+      intro: 'يرجى قراءة هذه الشروط والأحكام بعناية قبل استخدام تطبيق وخدمات سما تاكسي.',
+      sec1Title: '1. قبول الشروط',
+      sec1Content: 'من خلال إنشاء حساب أو حجز رحلة، فإنك توافق على الالتزام بهذه الشروط والأحكام وجميع الأنظمة المحلية المعمول بها في المملكة العربية السعودية.',
+      sec2Title: '2. استخدام الخدمة',
+      sec2Content: 'أنت توافق على استخدام سما تاكسي لأغراض مشروعة فقط، وتقديم معلومات دقيقة عن الرحلة وبيانات الاتصال، واحترام سائقينا ومركباتنا ومستخدمي الطريق الآخرين في جميع الأوقات.',
+      sec3Title: '3. حدود المسؤولية',
+      sec3Content: 'على الرغم من حرصنا على تقديم خدمة آمنة وموثوقة، إلا أن سما تاكسي غير مسؤولة عن أي أضرار غير مباشرة أو عرضية أو تبعية ناتجة عن استخدام الخدمة، إلى الحد الأقصى الذي يسمح به النظام.'
     },
     footer: {
       desc: 'الرائد في حلول النقل الرقمي في جميع أنحاء المملكة العربية السعودية. يوصلك ويهديك.',
