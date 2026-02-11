@@ -8,7 +8,6 @@ interface TermsConditionsProps {
 
 const TermsConditions: React.FC<TermsConditionsProps> = ({ lang }) => {
   const t = translations[lang].terms;
-  const isArabic = lang === 'ar';
 
   return (
     <div className="max-w-4xl mx-auto bg-white/40 border border-slate-950/10 rounded-[3rem] p-12 shadow-2xl animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -18,7 +17,7 @@ const TermsConditions: React.FC<TermsConditionsProps> = ({ lang }) => {
         {t.intro}
       </p>
 
-      {isArabic && (t as any).fullText ? (
+      {(t as any).fullText ? (
         <div className="text-slate-800 leading-relaxed text-lg whitespace-pre-line">
           {(t as any).fullText}
         </div>

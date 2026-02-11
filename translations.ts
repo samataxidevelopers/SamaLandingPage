@@ -234,16 +234,14 @@ Phone: 0509185515`
     },
     terms: {
       title: 'Terms & Conditions',
-      intro: 'Please read these terms and conditions carefully before using the Sama Taxi application and services.',
+      intro: 'Terms and Conditions – (Vehicle Dispatch License)',
       sec1Title: '',
       sec1Content: '',
       sec2Title: '',
       sec2Content: '',
       sec3Title: '',
       sec3Content: '',
-      fullText: `Terms and Conditions – (Vehicle Dispatch License)
-
-First: Legal Status of the Company
+      fullText: `First: Legal Status of the Company
 
 Company Role
 United Sama Company, owner of the Sama Taxi application, operates as a licensed technology platform to perform vehicle dispatch activities in accordance with the regulations and instructions of the Transport Authority in the Kingdom of Saudi Arabia. Its role is limited to directing and organizing transportation requests and connecting customers with registered captains on the platform. The Company is not considered a transportation service provider and is not a party to the transport contract.
@@ -271,9 +269,7 @@ The captain acknowledges that they operate as an independent, legally licensed t
 Sixth: Acknowledgment and Consent
 
 Captain Acknowledgment
-By using the Sama Taxi application, the captain acknowledges that they have read, understood, and agreed to these terms. The captain understands that the Company’s role is limited to vehicle dispatch and organizing requests, and that the Company is not obligated to compensate for any losses or claims arising from customer actions, in accordance with the laws of the Kingdom of Saudi Arabia.
-
-If you want, I can also reformat this translation in a professional legal-style document suitable for uploading to your app or website. Do you want me to do that?`
+By using the Sama Taxi application, the captain acknowledges that they have read, understood, and agreed to these terms. The captain understands that the Company’s role is limited to vehicle dispatch and organizing requests, and that the Company is not obligated to compensate for any losses or claims arising from customer actions, in accordance with the laws of the Kingdom of Saudi Arabia.`
     },
     footer: {
       desc: 'Leading the way in digital transportation solutions across Saudi Arabia. Connects you and guides you.',
