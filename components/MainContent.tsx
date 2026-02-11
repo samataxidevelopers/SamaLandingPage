@@ -15,15 +15,15 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
       {/* Hero Section */}
       <section className="relative py-12 flex flex-col md:flex-row items-center gap-12">
         <div className="md:w-1/2 space-y-8">
-          <div className="inline-block px-4 py-1 rounded-full bg-slate-950/10 border border-slate-950/20 text-slate-950 text-xs font-bold tracking-widest uppercase">
+          <div className="inline-block px-4 py-1 rounded-full bg-black/5 border border-black/20 text-black text-xs font-bold tracking-widest uppercase">
             {t.hero.badge}
           </div>
-          <h1 className="companyword text-5xl md:text-7xl font-black text-slate-950 leading-tight">
+          <h1 className="companyword text-5xl md:text-7xl font-black text-black leading-tight">
             {t.hero.title} 
-            <span className="bg-slate-950 text-sama-yellow px-2">{t.hero.titleHighlight}</span> 
+            <span className="bg-black text-sama-yellow px-2">{t.hero.titleHighlight}</span> 
             <span>{t.hero.titleEnd}</span> 
           </h1>
-          <p className="text-xl text-slate-800 max-w-lg leading-relaxed">
+          <p className="text-xl text-black/80 max-w-lg leading-relaxed">
             {t.hero.desc}
           </p>
         </div>
@@ -40,41 +40,41 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
       {/* Services Grid */}
       <section className="py-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-slate-950">{t.services.title}</h2>
-          <div className="w-20 h-1 bg-slate-950 mx-auto rounded-full"></div>
+          <h2 className="text-4xl font-bold mb-4 text-black">{t.services.title}</h2>
+          <div className="w-20 h-1 bg-black mx-auto rounded-full"></div>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {[
             { ...t.services.s1, icon: '🚕' },
             { ...t.services.s2, icon: '👩‍✈️' }
           ].map((service, i) => (
-            <div key={i} className="group p-8 bg-white/50 border border-slate-950/10 rounded-[2.5rem] hover:border-slate-950 transition-all duration-500 shadow-sm">
-              <div className="w-16 h-16 bg-slate-950 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+            <div key={i} className="group p-8 bg-white/50 border border-black/10 rounded-[2.5rem] hover:border-black transition-all duration-500 shadow-sm">
+              <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
                 {service.icon}
               </div>
-              <div className="text-slate-700 text-xs font-bold mb-2 uppercase tracking-widest">{service.label}</div>
-              <h3 className="text-2xl font-bold mb-4 text-slate-950">{service.title}</h3>
-              <p className="text-slate-700 leading-relaxed">{service.desc}</p>
+              <div className="text-black/60 text-xs font-bold mb-2 uppercase tracking-widest">{service.label}</div>
+              <h3 className="text-2xl font-bold mb-4 text-black">{service.title}</h3>
+              <p className="text-black/70 leading-relaxed">{service.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Newsletter / CTA Section */}
-      <section className="bg-slate-950 rounded-[3rem] p-12 md:p-20 text-center text-sama-yellow shadow-2xl">
+      <section className="bg-black rounded-[3rem] p-12 md:p-20 text-center text-sama-yellow shadow-2xl">
         <h2 className="text-3xl md:text-5xl font-black mb-6">
           {lang === 'ar' ? 'جاهز للانطلاق معنا؟' : 'Ready to ride with us?'}
         </h2>
-        <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+        <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-10">
           {lang === 'ar' 
             ? 'قم بتحميل التطبيق الآن واحصل على خصم 50% على رحلتك الأولى.' 
             : 'Download the app now and get 50% off your first ride.'}
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button className="bg-sama-yellow text-slate-950 px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform">
+          <button className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform">
             App Store
           </button>
-          <button className="bg-sama-yellow text-slate-950 px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform">
+          <button className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform">
             Google Play
           </button>
         </div>

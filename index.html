@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
       :root {
-        --sama-yellow: #FFD700;
+        --sama-yellow: #ffd400;
+        --sama-yellow-soft: #fff4b8;
+        --sama-black: #0b0b0b;
+        --sama-white: #ffffff;
       }
       body {
         font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
@@ -20,10 +23,10 @@
         font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
       }
       .glass {
-        background: rgba(255, 215, 0, 0.8);
+        background: rgba(255, 255, 255, 0.78);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
       }
       .bg-sama-yellow {
         background-color: var(--sama-yellow);
@@ -46,11 +49,14 @@
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: var(--sama-yellow);
+        background: var(--sama-white);
       }
       ::-webkit-scrollbar-thumb {
-        background: #000;
+        background: var(--sama-black);
         border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--sama-yellow);
       }
       .companyword {
         display: flex;
@@ -70,9 +76,9 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+ 
 </head>
-  <body class="bg-sama-yellow text-slate-950 overflow-x-hidden">
+  <body class="bg-white text-black overflow-x-hidden">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
