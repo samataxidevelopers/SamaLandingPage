@@ -26,19 +26,11 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
           <p className="text-xl text-slate-800 max-w-lg leading-relaxed">
             {t.hero.desc}
           </p>
-          <div className="flex flex-wrap gap-4">
-            <button className="px-8 py-4 bg-slate-950 text-sama-yellow font-bold rounded-2xl shadow-xl shadow-black/20 hover:scale-105 transition-transform">
-              {t.hero.btnPrimary}
-            </button>
-            <button className="px-8 py-4 bg-white text-slate-950 font-bold rounded-2xl border border-slate-200 hover:bg-slate-50 transition">
-              {t.hero.btnSecondary}
-            </button>
-          </div>
         </div>
         <div className="md:w-1/2 relative">
           <div className="absolute -inset-4 bg-white/30 blur-3xl rounded-full"></div>
           <img 
-            src="https://images.unsplash.com/photo-1559131397-f94da358f7ca?auto=format&fit=crop&q=80&w=1000" 
+            src="assets/images/floatingImage.png" 
             alt="Modern White Luxury Car" 
             className="relative rounded-[2rem] shadow-2xl border-4 border-white animate-float object-cover h-[400px] w-full"
           />
@@ -51,11 +43,10 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
           <h2 className="text-4xl font-bold mb-4 text-slate-950">{t.services.title}</h2>
           <div className="w-20 h-1 bg-slate-950 mx-auto rounded-full"></div>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {[
             { ...t.services.s1, icon: '🚕' },
-            { ...t.services.s2, icon: '👩‍✈️' },
-            { ...t.services.s3, icon: '📦' }
+            { ...t.services.s2, icon: '👩‍✈️' }
           ].map((service, i) => (
             <div key={i} className="group p-8 bg-white/50 border border-slate-950/10 rounded-[2.5rem] hover:border-slate-950 transition-all duration-500 shadow-sm">
               <div className="w-16 h-16 bg-slate-950 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
