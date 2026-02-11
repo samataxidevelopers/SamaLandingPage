@@ -9,6 +9,7 @@ interface MainContentProps {
 
 const MainContent: React.FC<MainContentProps> = ({ lang }) => {
   const t = translations[lang];
+  const heroImageUrl = new URL('../assets/images/floatingImage.png', import.meta.url).href;
 
   return (
     <div className="space-y-20 animate-in fade-in slide-in-from-bottom-4 duration-1000">
@@ -30,7 +31,7 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
         <div className="md:w-1/2 relative">
           <div className="absolute -inset-4 bg-white/30 blur-3xl rounded-full"></div>
           <img 
-            src="assets/images/floatingImage.png" 
+            src={heroImageUrl} 
             alt="Modern White Luxury Car" 
             className="relative rounded-[2rem] shadow-2xl border-4 border-white animate-float object-cover h-[400px] w-full"
           />
@@ -49,7 +50,7 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
             { ...t.services.s2, icon: '👩‍✈️' }
           ].map((service, i) => (
             <div key={i} className="group p-8 bg-white/50 border border-black/10 rounded-[2.5rem] hover:border-black transition-all duration-500 shadow-sm">
-              <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-[antiquewhite] rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
                 {service.icon}
               </div>
               <div className="text-black/60 text-xs font-bold mb-2 uppercase tracking-widest">{service.label}</div>

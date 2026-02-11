@@ -57,12 +57,10 @@ const Footer: React.FC<FooterProps> = ({ lang, setActiveTab }) => {
 
         <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex space-x-6 rtl:space-x-reverse">
-             <a href="https://twitter.com/samataxi" className="text-white/60 hover:text-white transition">Twitter</a>
-             <a href="https://instagram.com/samataxi" className="text-white/60 hover:text-white transition">Instagram</a>
-             <a href="https://facebook.com/samataxi" className="text-white/60 hover:text-white transition">Facebook</a>
+             <a href="https://x.com/SMATAXI" className="text-white/60 hover:text-white transition">Twitter</a>
           </div>
           <div className="text-white/60 text-xs font-medium text-center md:text-right rtl:md:text-left">
-            <p>samataxi.app | +966 50 884 2002</p>
+            <p>samataxi.app | +966 50 918 5515</p>
             <p className="mt-2">© {new Date().getFullYear()} Sama Taxi Inc. {t.copy}</p>
           </div>
         </div>

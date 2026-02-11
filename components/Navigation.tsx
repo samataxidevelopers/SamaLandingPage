@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { TabType, Language } from '../types';
 import { translations } from '../translations';
@@ -12,6 +11,7 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({ activeTab, setActiveTab, lang, setLang }) => {
   const t = translations[lang].nav;
+  const logoUrl = new URL('../assets/images/Sama Taxi-01.png', import.meta.url).href;
   const tabs = [
     { type: TabType.MAIN, label: t.main },
     { type: TabType.PRIVACY, label: t.privacy },
@@ -31,7 +31,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, setActiveTab, lang, 
           }}
         >
           <div className="relative w-12 h-12 flex items-center justify-center">
-             <img src="assets/images/Sama Taxi-01.png" alt="Sama Taxi" className="w-full h-full object-contain" />
+             <img src={logoUrl} alt="Sama Taxi" className="w-full h-full object-contain" />
           </div>
           <div className="flex flex-col">
             <span className="text-xl font-extrabold tracking-tighter text-black leading-none">
