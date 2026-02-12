@@ -72,12 +72,22 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
             : 'Download the app now and get 50% off your first ride.'}
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform">
+          <a 
+            href="https://apps.apple.com/us/app/%D8%B3%D9%85%D8%A7-%D8%AA%D8%A7%D9%83%D8%B3%D9%8A-%D9%88-%D8%AA%D9%88%D8%B5%D9%8A%D9%84/id1605081866?l=ar"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform inline-block text-center"
+          >
             App Store
-          </button>
-          <button className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform">
+          </a>
+          <a 
+            href="https://play.google.com/store/apps/details?id=com.multibrains.taxi.passenger.samtaxisaudi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform inline-block text-center"
+          >
             Google Play
-          </button>
+          </a>
         </div>
       </section>
     </div>
