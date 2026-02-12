@@ -33,7 +33,7 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
           <img 
             src={heroImageUrl} 
             alt="Modern White Luxury Car" 
-            className="relative rounded-[2rem] shadow-2xl border-4 border-white animate-float object-cover h-[400px] w-full"
+            className="relative block rounded-[2rem] shadow-2xl border-4 border-white animate-float w-full h-auto object-contain max-h-[320px] sm:max-h-[380px] md:max-h-[420px]"
           />
         </div>
       </section>
@@ -50,7 +50,7 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
             { ...t.services.s2, icon: '👩‍✈️' }
           ].map((service, i) => (
             <div key={i} className="group p-8 bg-white/50 border border-black/10 rounded-[2.5rem] hover:border-black transition-all duration-500 shadow-sm">
-              <div className="w-16 h-16 bg-[antiquewhite] rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+              <div className={`w-16 h-16 ${service.icon === '👩‍✈️' ? 'bg-[#F7A6AC]' : 'bg-[antiquewhite]'} rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform`}>
                 {service.icon}
               </div>
               <div className="text-black/60 text-xs font-bold mb-2 uppercase tracking-widest">{service.label}</div>
