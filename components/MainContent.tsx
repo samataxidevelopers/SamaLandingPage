@@ -49,8 +49,8 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
             { ...t.services.s1, icon: '🚕' },
             { ...t.services.s2, icon: '👩‍✈️' }
           ].map((service, i) => (
-            <div key={i} className="group p-8 bg-white/50 border border-black/10 rounded-[2.5rem] hover:border-black transition-all duration-500 shadow-sm">
-              <div className={`w-16 h-16 ${service.icon === '👩‍✈️' ? 'bg-[#F7A6AC]' : 'bg-[antiquewhite]'} rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform`}>
+            <div key={i} className={`group p-8 ${service.icon === '👩‍✈️' ? 'bg-[rgb(243_165_172_/_23%)]' : 'bg-[antiquewhite]'} border border-black/10 rounded-[2.5rem] hover:border-black transition-all duration-500 shadow-sm`}>
+              <div className="w-16 h-16 bg-transparent rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
                 {service.icon}
               </div>
               <div className="text-black/60 text-xs font-bold mb-2 uppercase tracking-widest">{service.label}</div>
