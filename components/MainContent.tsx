@@ -71,22 +71,32 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
             ? 'قم بتحميل التطبيق الآن واحصل على خصم 50% على رحلتك الأولى.' 
             : 'Download the app now and get 50% off your first ride.'}
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <a 
             href="https://apps.apple.com/us/app/%D8%B3%D9%85%D8%A7-%D8%AA%D8%A7%D9%83%D8%B3%D9%8A-%D9%88-%D8%AA%D9%88%D8%B5%D9%8A%D9%84/id1605081866?l=ar"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform inline-block text-center"
+            className="inline-block hover:opacity-90 transition-opacity h-16 sm:h-36"
+            aria-label="Download on the App Store"
           >
-            App Store
+            <img 
+              src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" 
+              alt="Download on the App Store" 
+              className="h-full w-auto object-contain"
+            />
           </a>
           <a 
             href="https://play.google.com/store/apps/details?id=com.multibrains.taxi.passenger.samtaxisaudi"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform inline-block text-center"
+            className="inline-block hover:opacity-90 transition-opacity h-16 sm:h-40"
+            aria-label="Get it on Google Play"
           >
-            Google Play
+            <img 
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+              alt="Get it on Google Play" 
+              className="h-full w-auto object-contain"
+            />
           </a>
         </div>
       </section>
