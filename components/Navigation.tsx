@@ -1,21 +1,20 @@
 import React, { useState } from 'react';
-import { TabType, Language } from '../types';
+import { NavLink, Link } from 'react-router-dom';
+import { Language } from '../types';
 import { translations } from '../translations';
 
 interface NavigationProps {
-  activeTab: TabType;
-  setActiveTab: (tab: TabType) => void;
   lang: Language;
   setLang: (lang: Language) => void;
 }
 
-const Navigation: React.FC<NavigationProps> = ({ activeTab, setActiveTab, lang, setLang }) => {
+const Navigation: React.FC<NavigationProps> = ({ lang, setLang }) => {
   const t = translations[lang].nav;
   const logoUrl = new URL('../assets/images/Sama Taxi-01.png', import.meta.url).href;
   const tabs = [
-    { type: TabType.MAIN, label: t.main },
-    { type: TabType.PRIVACY, label: t.privacy },
-    { type: TabType.TERMS, label: t.terms }
+    { to: '/', label: t.main },
+    { to: '/privacy-policy', label: t.privacy },
+    { to: '/terms', label: t.terms }
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,12 +22,10 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, setActiveTab, lang, 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-        <div
+        <Link
+          to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse group cursor-pointer"
-          onClick={() => {
-            setActiveTab(TabType.MAIN);
-            setMenuOpen(false);
-          }}
+          onClick={() => setMenuOpen(false)}
         >
           <div className="relative w-12 h-12 flex items-center justify-center">
              <img src={logoUrl} alt="Sama Taxi" className="w-full h-full object-contain" />
@@ -39,23 +36,25 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, setActiveTab, lang, 
             </span>
             <span className="text-[10px] text-black/60 font-medium tracking-[0.2em] uppercase">{t.slogan}</span>
           </div>
-        </div>
+        </Link>
 
         <div className="flex items-center space-x-1 sm:space-x-4 rtl:space-x-reverse">
           {/* Desktop nav links */}
           <div className="hidden lg:flex items-center space-x-1 sm:space-x-2 rtl:space-x-reverse">
             {tabs.map((tab) => (
-              <button
-                key={tab.type}
-                onClick={() => setActiveTab(tab.type)}
-                className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                  activeTab === tab.type
-                    ? 'bg-black text-sama-yellow shadow-lg shadow-black/20'
-                    : 'text-black/70 hover:text-black hover:bg-black/5'
-                }`}
+              <NavLink
+                key={tab.to}
+                to={tab.to}
+                className={({ isActive }) =>
+                  `px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 ${
+                    isActive ? 'bg-black text-sama-yellow shadow-lg shadow-black/20' : 'text-black/70 hover:text-black hover:bg-black/5'
+                  }`
+                }
+                onClick={() => setMenuOpen(false)}
+                end={tab.to === '/'}
               >
                 {tab.label}
-              </button>
+              </NavLink>
             ))}
           </div>
 
@@ -96,20 +95,19 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, setActiveTab, lang, 
         <div className="lg:hidden border-t border-black/10 bg-white/95 backdrop-blur-sm shadow-md">
           <div className="max-w-7xl mx-auto px-4 py-4 space-y-3">
             {tabs.map((tab) => (
-              <button
-                key={tab.type}
-                onClick={() => {
-                  setActiveTab(tab.type);
-                  setMenuOpen(false);
-                }}
-                className={`w-full text-left px-4 py-3 rounded-2xl text-sm font-semibold transition-all duration-300 ${
-                  activeTab === tab.type
-                    ? 'bg-black text-sama-yellow shadow-lg shadow-black/20'
-                    : 'text-black/70 hover:text-black hover:bg-black/5'
-                }`}
+              <NavLink
+                key={tab.to}
+                to={tab.to}
+                className={({ isActive }) =>
+                  `block w-full text-left px-4 py-3 rounded-2xl text-sm font-semibold transition-all duration-300 ${
+                    isActive ? 'bg-black text-sama-yellow shadow-lg shadow-black/20' : 'text-black/70 hover:text-black hover:bg-black/5'
+                  }`
+                }
+                onClick={() => setMenuOpen(false)}
+                end={tab.to === '/'}
               >
                 {tab.label}
-              </button>
+              </NavLink>
             ))}
 
             <button

@@ -1,14 +1,14 @@
 
 import React from 'react';
-import { Language, TabType } from '../types';
+import { Link } from 'react-router-dom';
+import { Language } from '../types';
 import { translations } from '../translations';
 
 interface FooterProps {
   lang: Language;
-  setActiveTab: (tab: TabType) => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ lang, setActiveTab }) => {
+const Footer: React.FC<FooterProps> = ({ lang }) => {
   const t = translations[lang].footer;
   const navT = translations[lang].nav;
 
@@ -30,26 +30,18 @@ const Footer: React.FC<FooterProps> = ({ lang, setActiveTab }) => {
             <div className="space-y-4">
               <h4 className="text-white font-bold text-sm uppercase tracking-widest">{lang === 'ar' ? 'السياسات' : 'Policies'}</h4>
               <nav className="flex flex-col space-y-2 text-white/70 text-sm">
-                <button
-                  type="button"
-                    onClick={() => {
-                    setActiveTab(TabType.PRIVACY);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }}
+                <Link
+                  to="/privacy-policy"
                   className="text-left rtl:text-right hover:text-sama-yellow transition cursor-pointer"
                 >
                   {navT.privacy}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setActiveTab(TabType.TERMS);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }}
+                </Link>
+                <Link
+                  to="/terms"
                   className="text-left rtl:text-right hover:text-sama-yellow transition cursor-pointer"
                 >
                   {lang === 'ar' ? 'الشروط والأحكام' : 'Terms & Conditions'}
-                </button>
+                </Link>
               </nav>
             </div>
           </div>

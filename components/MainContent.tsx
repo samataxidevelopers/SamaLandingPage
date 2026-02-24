@@ -10,6 +10,8 @@ interface MainContentProps {
 const MainContent: React.FC<MainContentProps> = ({ lang }) => {
   const t = translations[lang];
   const heroImageUrl = new URL('../assets/images/floatingImage.png', import.meta.url).href;
+  const appStoreIconUrl = new URL('../assets/images/apple-store.png', import.meta.url).href;
+  const playStoreIconUrl = new URL('../assets/images/google-play .png', import.meta.url).href;
 
   return (
     <div className="space-y-20 animate-in fade-in slide-in-from-bottom-4 duration-1000">
@@ -76,17 +78,19 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
             href="https://apps.apple.com/us/app/%D8%B3%D9%85%D8%A7-%D8%AA%D8%A7%D9%83%D8%B3%D9%8A-%D9%88-%D8%AA%D9%88%D8%B5%D9%8A%D9%84/id1605081866?l=ar"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform inline-block text-center"
+            className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform inline-flex items-center justify-center gap-3 text-center"
           >
-            App Store
+            <img src={appStoreIconUrl} alt="App Store" className="w-5 h-5 object-contain" />
+            <span>{lang === 'ar' ? 'آب ستور' : 'App Store'}</span>
           </a>
           <a 
             href="https://play.google.com/store/apps/details?id=com.multibrains.taxi.passenger.samtaxisaudi"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform inline-block text-center"
+            className="bg-sama-yellow text-black px-10 py-4 rounded-2xl font-black uppercase tracking-wider hover:scale-105 transition-transform inline-flex items-center justify-center gap-3 text-center"
           >
-            Google Play
+            <img src={playStoreIconUrl} alt="Google Play" className="w-5 h-5 object-contain" />
+            <span>{lang === 'ar' ? 'جوجل بلاي' : 'Google Play'}</span>
           </a>
         </div>
       </section>
