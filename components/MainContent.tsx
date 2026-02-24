@@ -73,7 +73,7 @@ const MainContent: React.FC<MainContentProps> = ({ lang }) => {
             ? 'قم بتحميل التطبيق الآن واحصل على خصم 50% على رحلتك الأولى.' 
             : 'Download the app now and get 50% off your first ride.'}
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <a 
             href="https://apps.apple.com/us/app/%D8%B3%D9%85%D8%A7-%D8%AA%D8%A7%D9%83%D8%B3%D9%8A-%D9%88-%D8%AA%D9%88%D8%B5%D9%8A%D9%84/id1605081866?l=ar"
             target="_blank"
