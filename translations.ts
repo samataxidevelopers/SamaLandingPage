@@ -179,57 +179,7 @@ The captain acknowledges that they operate as an independent, legally licensed t
 Sixth: Acknowledgment and Consent
 
 Captain Acknowledgment
-By using the Sama Taxi application, the captain acknowledges that they have read, understood, and agreed to these terms. The captain understands that the Company’s role is limited to vehicle dispatch and organizing requests, and that the Company is not obligated to compensate for any losses or claims arising from customer actions, in accordance with the laws of the Kingdom of Saudi Arabia.
-
-Lost and Found Return Mechanism
-- United Sama Transportation Services Company, Sama Taxi App
-February 2026 Edition
-
-First: Purpose and Scope
-This mechanism aims to regulate the procedures for reporting, retrieving, and returning lost items to their owners within the framework of passenger transportation services provided through the Sama Taxi app. This mechanism applies to all passengers and drivers associated with the app.
-
-Second: Definition of Lost Items
-For the purposes of this mechanism, lost items refer to any personal item left behind by a passenger inside the vehicle after the trip, whether it is a phone, bag, document, or any other item.
-
-Third: Reporting Mechanism for Lost Items
-1. From the passenger's side:
-If a passenger loses any item inside the vehicle, they should follow these steps:
-1. Contact the Sama Taxi support team as soon as possible after discovering the loss through any of the following channels:
-• Phone call
-• WhatsApp message
-2. Provide the support team with the following information: trip number or the approximate date and time, a description of the lost item, and a contact number.
-3. The Sama Taxi support team will contact the driver to verify the item's presence.
-
-2. From the driver's side:
-The driver is obligated to:
-1. Immediately notify the Sama Taxi support team through the approved communication channels upon discovering any lost item inside the vehicle.
-2. Safely keep the lost item until it is returned to its owner or handed over to the support team.
-3. Refrain from disposing of or using the lost item in any way.
-
-Fourth: Delivery Procedures
-After verifying that the lost item is in the driver's possession, delivery will be made according to one of the following two methods, as agreed upon:
-
-Method One: Direct Delivery
-The passenger and driver agree on a suitable place and time for the direct handover of the item. The Sama Taxi team acts as a liaison between the two parties to facilitate coordination.
-
-Method Two: Delivery Service
-If direct handover is not possible, it may be agreed that the item will be delivered to the passenger. Sama Taxi’s responsibility is limited to coordination between the two parties.
-
-Fifth: Responsibilities of the Parties
-• Passenger: Immediately report the lost item and provide the necessary information.
-• Driver: Immediately report any lost items and keep them safe until delivery.
-• Sama Taxi: Coordinate between the passenger and driver and facilitate the communication and delivery process.
-
-Sixth: General Provisions
-• Sama Taxi Company shall not be held liable for any damage that may occur to the lost item if it is not reported in a timely manner.
-• If the item is not claimed within thirty (30) days from the date of reporting, the Company shall dispose of it as it deems appropriate.
-
-Seventh: Communication Channels
-Lost items may be reported through the following official channels:
-• Telephone call
-• WhatsApp
-
-This mechanism is prepared in accordance with the requirements of paragraph (20) of Article Fifteen of the Executive Regulations for Passenger Transport Brokerage via Electronic Applications issued by the Public Transport Authority.`
+By using the Sama Taxi application, the captain acknowledges that they have read, understood, and agreed to these terms. The captain understands that the Company’s role is limited to vehicle dispatch and organizing requests, and that the Company is not obligated to compensate for any losses or claims arising from customer actions, in accordance with the laws of the Kingdom of Saudi Arabia.`
     },
     footer: {
       desc: 'Leading the way in digital transportation solutions across Saudi Arabia. Connects you and guides you.',
