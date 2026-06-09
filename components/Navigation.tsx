@@ -69,9 +69,13 @@ const Navigation: React.FC<NavigationProps> = ({ lang, setLang }) => {
           </button>
 
           {/* Desktop download button */}
-          <button className="hidden md:block bg-black text-sama-yellow px-6 py-2 rounded-xl text-sm font-bold hover:bg-black/90 transition-all duration-300 transform active:scale-95">
+          <Link
+            to="/get-app"
+            className="hidden md:block bg-black text-sama-yellow px-6 py-2 rounded-xl text-sm font-bold hover:bg-black/90 transition-all duration-300 transform active:scale-95"
+            onClick={() => setMenuOpen(false)}
+          >
             {t.download}
-          </button>
+          </Link>
 
           {/* Mobile menu toggle */}
           <button
@@ -110,12 +114,13 @@ const Navigation: React.FC<NavigationProps> = ({ lang, setLang }) => {
               </NavLink>
             ))}
 
-            <button
-              className="w-full mt-2 bg-black text-sama-yellow px-4 py-3 rounded-2xl text-sm font-bold hover:bg-black/90 transition-all duration-300"
+            <Link
+              to="/get-app"
+              className="block w-full mt-2 bg-black text-sama-yellow px-4 py-3 rounded-2xl text-sm font-bold hover:bg-black/90 transition-all duration-300"
               onClick={() => setMenuOpen(false)}
             >
               {t.download}
-            </button>
+            </Link>
           </div>
         </div>
       )}

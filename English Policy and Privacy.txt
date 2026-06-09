@@ -71,6 +71,10 @@ Browser Cookies: Cookies are small files placed on your device. You can instruct
 
 Web Beacons: Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, or single-pixel gifs) that allow the Company to count users who have visited pages or opened emails and for other related website statistics.
 
+Identity Verification and Face Data
+
+Where identity verification is enabled, the app may process face data to verify your identity and prevent misuse. The app may use on-device depth data for liveness detection. This depth data is not stored or transmitted. The app may ask you to take a selfie, which is sent to our server for verification and deleted after verification is completed. Face data is used only for identity verification and liveness detection, not for advertising, marketing, or profiling.
+
 Use of Your Personal Data
 
 The Company may use Personal Data for the following purposes:

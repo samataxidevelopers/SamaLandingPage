@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Language } from './types';
 import MainContent from './components/MainContent';
+import GetApp from './components/GetApp.tsx';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions';
 import Navigation from './components/Navigation';
@@ -24,6 +25,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <Routes>
             <Route path="/" element={<MainContent lang={lang} />} />
+            <Route path="/get-app" element={<GetApp lang={lang} />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy lang={lang} />} />
             <Route path="/terms" element={<TermsConditions lang={lang} />} />
             <Route path="*" element={<Navigate to="/" replace />} />
